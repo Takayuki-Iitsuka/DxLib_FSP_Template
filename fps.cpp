@@ -5,7 +5,7 @@
 FPS fps;
 
 //初期化
-VOID FPSInit(VOID)
+void FPSInit(void)
 {
 	//Windowsが起動してから現在までの時間を得る（マイクロ秒）
 	fps.FirstTakeTime = GetNowHiPerformanceCount();
@@ -20,7 +20,7 @@ VOID FPSInit(VOID)
 }
 
 //計測
-VOID FPSCheck(VOID)
+void FPSCheck(void)
 {
 	//現在の時刻を取得
 	fps.NowTakeTime = GetNowHiPerformanceCount();
@@ -49,7 +49,7 @@ VOID FPSCheck(VOID)
 }
 
 //描画
-VOID FPSDraw(VOID)
+void FPSDraw(void)
 {
 	DrawFormatString(0, 0, GetColor(255, 255, 255), "FPS:%3.1f", fps.Average);
 
@@ -57,7 +57,7 @@ VOID FPSDraw(VOID)
 }
 
 //待機
-VOID FPSWait(VOID)
+void FPSWait(void)
 {
 	//早すぎたときに待機するミリ秒
 	int wait = 0;

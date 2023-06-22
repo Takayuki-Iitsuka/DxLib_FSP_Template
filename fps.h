@@ -24,9 +24,9 @@ typedef struct _FPS {
 extern FPS fps;
 
 //外部プロトタイプ宣言
-extern VOID FPSInit(VOID);
-extern VOID FPSCheck(VOID);
-extern VOID FPSDraw(VOID);
-extern VOID FPSWait(VOID);
+extern void FPSInit(void);
+extern void FPSCheck(void);
+extern void FPSDraw(void);
+extern void FPSWait(void);
 
 // End

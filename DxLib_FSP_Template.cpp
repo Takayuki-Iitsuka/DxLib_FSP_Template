@@ -1,6 +1,5 @@
 //DxLib_FSP_Template.cpp
 //
-//#include <windows.h>
 #include <DxLib.h>
 #include "fps.h"
 #include <cmath>
@@ -15,10 +14,6 @@ const double MY_PI = 3.141592653589793238462643;
 const int W_Width = 1280; //　画面の幅
 const int W_Height = 720; // 画面の高さ
 const int W_ColorBit = 32; // 画面の色
-
-// プロトタイプ宣言
-int WINAPI WinMain(_In_	HINSTANCE, _In_opt_ HINSTANCE,
-				   _In_	LPSTR, _In_	int);
 
 // Windows Main 関数
 int WINAPI WinMain(_In_	HINSTANCE hInstance, _In_opt_ HINSTANCE	hPrevInstance,
